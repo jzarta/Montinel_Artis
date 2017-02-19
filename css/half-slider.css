@@ -14,6 +14,9 @@ body {
 .carousel {
     height: 115%;
 }
+#audio {
+  padding-right: right;
+}
 
 .item,
 .active,

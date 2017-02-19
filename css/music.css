@@ -1,0 +1,71 @@
+body{
+  /*background-color:#f0eae5;*/
+}
+.toggle {
+  
+  width: 77px;
+  height: 22px;
+  position: relative;
+  -webkit-user-select: none;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 13px;
+  font-family: arial;
+  line-height: 22px;
+  font-weight: bold;
+  margin: 0 auto;
+}
+.toggle .on, .toggle .off {
+  z-index: 10;
+  position: absolute;
+  top: 0px;
+  height: 24px;
+  width:29px;
+  transition: all 0.2s;
+}
+.toggle .off {
+  right: 10px;
+  color: #5e6f6e;
+}
+.toggle .on {
+  left: 5px;
+  color:#fff;
+}
+.toggle .slide {
+  transition: all 0.2s ease;
+  position: absolute;
+  left: 3px;
+  top: -1px;
+  bottom: 0;
+  background: #6699cc;
+  width: 30px;
+  height: 25px;
+  z-index: 1;
+  border-radius:5px;
+}
+.toggle:hover .slide {
+  /*background: #999;*/
+}
+.toggle.active .slide {
+  left: 36px;
+}
+.toggle.active .on {
+  color:#5e6f6e;
+}
+.toggle.active .off {
+  color:#fff;
+}
+.musicicon h3{
+	text-align: center;
+  font-size:16px;
+  font-family:Arial;
+  line-height:18px;
+  color:#e8592a;
+  font-weight:bold;
+}
+.musicplayer{
+  padding-bottom: 15px;
+  padding-top: 15px;
+	width: 140px;
+  margin: 40px auto 0 auto;
+}
